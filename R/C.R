@@ -13,5 +13,5 @@
 reverse = function(x) {
   n = length(x)
   res = .C('reverse', as.numeric(x), n, numeric(n), package = 'rmini')
-  res[[3L]]
+  res
 }
